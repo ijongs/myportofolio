@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Me - Portofolio Mahasiswi Teknik Komputer</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                        "card-dark": "#1c1f27",
+                        "card-border": "#282e39",
+                        "text-secondary": "#9da6b9"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white overflow-x-hidden">
+<!-- Navbar -->
+<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-b-gray-200 dark:border-b-[#282e39] bg-background-light/80 dark:bg-[#111318]/90 backdrop-blur-md px-10 py-3">
+<div class="flex items-center gap-4">
+<div class="size-8 text-primary">
+<span class="material-symbols-outlined text-[32px]">terminal</span>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Portofolio</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<nav class="hidden md:flex items-center gap-9">
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="index.html">Beranda</a>
+<a class="text-sm font-medium leading-normal text-primary" href="aboutme.html">About Me</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="project.html">Proyek</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="contact.html">Kontak</a>
+</nav>
+<button class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-primary/90 transition-colors text-white text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">download</span>
+                    Unduh CV
+                </span>
+</button>
+</div>
+</header>
+<main class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-20 lg:px-40 flex flex-1 justify-center py-10">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1 gap-12">
+<!-- Hero / Intro Section -->
+<section class="@container">
+<div class="flex flex-col-reverse gap-8 @[768px]:flex-row @[768px]:items-center">
+<div class="flex flex-col gap-6 flex-1">
+<div class="flex flex-col gap-3">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 w-fit">
+<span class="text-primary text-xs font-bold uppercase tracking-wide">About Me</span>
+</div>
+<h1 class="text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl">
+                                    Computer Engineering Student 
+                                </h1>
+<p class="text-text-secondary text-lg leading-relaxed">
+                                    Halo! Saya seorang mahasiswi tingkat akhir di Universitas Pendidikan Indonesia. Saya memiliki ketertarikan mendalam pada pengembangan sistem tertanam (embedded systems), IoT, dan pengembangan web modern. Saya senang memecahkan masalah kompleks melalui kode yang efisien.
+                                </p>
+</div>
+<!-- Quick Stats -->
+<div class="flex flex-wrap gap-8 py-4 border-y border-card-border">
+<div>
+<p class="text-3xl font-bold text-white">3+</p>
+<p class="text-sm text-text-secondary">Tahun Pengalaman Coding</p>
+</div>
+<div>
+<p class="text-3xl font-bold text-white">15+</p>
+<p class="text-sm text-text-secondary">Proyek Selesai</p>
+</div>
+<div>
+<p class="text-3xl font-bold text-white">3.64</p>
+<p class="text-sm text-text-secondary">IPK Saat Ini</p>
+</div>
+</div>
+</div>
+<div class="w-full @[768px]:w-[360px] flex-shrink-0">
+<div class="relative aspect-[4/5] rounded-2xl overflow-hidden bg-card-dark shadow-2xl rotate-3 hover:rotate-0 transition-transform duration-500 group">
+<div class="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors z-10"></div>
+<div class="w-full h-full bg-center bg-cover" data-alt="Portrait of a female computer engineering student looking professional" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC1VGkviz-h0rHcqofiUFrtiQt0MwFBqts9-ZWDAZzChEZ8UBM5TFZh53ZlyhjuVep7TWdqGrlxlYZbYo0fvUn3dLcie__G-V3DduW2b4xooNpxnV8_zosFlLois7RM6taDGWWoU0CO2Z6dBA_kwZy-HbgKh0YL-GWmL2DbX3Zy4Yn7TEESVW8AY06GBozFcnQtcpgLSuhjws9wgATYg4nPI5l_9WemT2qffS-pKIJc1T-UgYhfYYISyks6Y-n-POX8nVRj3WiMsXI");'></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Education Section -->
+<section>
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">school</span>
+<h2 class="text-[28px] font-bold leading-tight">Pendidikan</h2>
+</div>
+<div class="bg-card-dark rounded-xl p-6 border border-card-border shadow-sm hover:border-primary/50 transition-colors">
+<div class="flex flex-col md:flex-row gap-6 items-start">
+<div class="w-16 h-16 rounded-lg bg-white p-2 flex items-center justify-center flex-shrink-0">
+<!-- Placeholder for University Logo -->
+<span class="material-symbols-outlined text-black text-4xl">account_balance</span>
+</div>
+<div class="flex-1 w-full">
+<div class="flex flex-col md:flex-row md:justify-between md:items-start gap-2 mb-4">
+<div>
+<h3 class="text-xl font-bold text-white">Universitas Pendidikan Indonesia</h3>
+<p class="text-primary font-medium">Sarjana (S1) Teknik Komputer</p>
+</div>
+<div class="px-3 py-1 bg-card-border rounded-full text-sm font-medium text-text-secondary whitespace-nowrap">
+                                        2023 - Sekarang
+                                    </div>
+</div>
+<p class="text-text-secondary mb-4 leading-relaxed">
+                                    Fokus studi pada Arsitektur Komputer, Sistem Operasi, Jaringan Komputer, dan Rekayasa Perangkat Lunak. Aktif dalam organisasi Himpunan Mahasiswa dan Dewan Perwakilan Mahasiswa.
+                                </p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 rounded-md bg-background-dark border border-card-border text-xs text-text-secondary">IPK: 3.64/4.00</span>
+<span class="px-3 py-1 rounded-md bg-background-dark border border-card-border text-xs text-text-secondary">Staff Komisi Pengawasan dan Badan Legislasi</span>
+<span class="px-3 py-1 rounded-md bg-background-dark border border-card-border text-xs text-text-secondary"> </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Skills Section -->
+<section>
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">code</span>
+<h2 class="text-[28px] font-bold leading-tight">Keahlian Teknis</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Programming Languages -->
+<div class="bg-card-dark rounded-xl p-6 border border-card-border">
+<h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">terminal</span>
+                                Bahasa Pemrograman
+                            </h3>
+<div class="flex flex-wrap gap-3">
+<div class="flex items-center gap-2 bg-background-dark px-3 py-2 rounded-lg border border-card-border hover:border-primary/50 transition-colors cursor-default group">
+<span class="w-2 h-2 rounded-full bg-yellow-400 group-hover:shadow-[0_0_8px_rgba(250,204,21,0.6)]"></span>
+<span class="text-sm font-medium">Python</span>
+</div>  
+<div class="flex items-center gap-2 bg-background-dark px-3 py-2 rounded-lg border border-card-border hover:border-primary/50 transition-colors cursor-default group">
+<span class="w-2 h-2 rounded-full bg-green-500 group-hover:shadow-[0_0_8px_rgba(34,197,94,0.6)]"></span>
+<span class="text-sm font-medium">Dart</span>
+</div>
+<div class="flex items-center gap-2 bg-background-dark px-3 py-2 rounded-lg border border-card-border hover:border-primary/50 transition-colors cursor-default group">
+<span class="w-2 h-2 rounded-full bg-blue-500 group-hover:shadow-[0_0_8px_rgba(59,130,246,0.6)]"></span>
+<span class="text-sm font-medium">C++</span>
+</div>
+<div class="flex items-center gap-2 bg-background-dark px-3 py-2 rounded-lg border border-card-border hover:border-primary/50 transition-colors cursor-default group">
+<span class="w-2 h-2 rounded-full bg-orange-500 group-hover:shadow-[0_0_8px_rgba(249,115,22,0.6)]"></span>
+<span class="text-sm font-medium">Java</span>
+</div>
+<div class="flex items-center gap-2 bg-background-dark px-3 py-2 rounded-lg border border-card-border hover:border-primary/50 transition-colors cursor-default group">
+<span class="w-2 h-2 rounded-full bg-yellow-300 group-hover:shadow-[0_0_8px_rgba(253,224,71,0.6)]"></span>
+<span class="text-sm font-medium">JavaScript</span>
+</div>
+<div class="flex items-center gap-2 bg-background-dark px-3 py-2 rounded-lg border border-card-border hover:border-primary/50 transition-colors cursor-default group">
+<span class="w-2 h-2 rounded-full bg-blue-400 group-hover:shadow-[0_0_8px_rgba(96,165,250,0.6)]"></span>
+<span class="text-sm font-medium">SQL</span>
+</div>
+</div>
+</div>
+<!-- Tools & Frameworks -->
+<div class="bg-card-dark rounded-xl p-6 border border-card-border">
+<h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">build</span>
+                                Tools &amp; Frameworks
+                            </h3>
+<div class="flex flex-wrap gap-3">
+<span class="bg-background-dark px-3 py-2 rounded-lg border border-card-border text-sm text-text-secondary hover:text-white transition-colors">React.js</span>
+<span class="bg-background-dark px-3 py-2 rounded-lg border border-card-border text-sm text-text-secondary hover:text-white transition-colors">Git &amp; GitHub</span>
+<span class="bg-background-dark px-3 py-2 rounded-lg border border-card-border text-sm text-text-secondary hover:text-white transition-colors">Arduino IDE</span>
+<span class="bg-background-dark px-3 py-2 rounded-lg border border-card-border text-sm text-text-secondary hover:text-white transition-colors">VS Code</span>
+<span class="bg-background-dark px-3 py-2 rounded-lg border border-card-border text-sm text-text-secondary hover:text-white transition-colors">Figma</span>
+<span class="bg-background-dark px-3 py-2 rounded-lg border border-card-border text-sm text-text-secondary hover:text-white transition-colors">HTML/CSS</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Experience / Activities -->
+<section>
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">history_edu</span>
+<h2 class="text-[28px] font-bold leading-tight">Pengalaman</h2>
+</div>
+<div class="relative pl-8 border-l border-card-border space-y-10">
+<!-- Experience Item 1 -->
+<div class="relative">
+<div class="absolute -left-[37px] top-1 h-4 w-4 rounded-full bg-primary border-4 border-background-dark shadow-[0_0_0_4px_rgba(19,91,236,0.2)]"></div>
+<div class="flex flex-col gap-1">
+<h3 class="text-lg font-bold text-white">Staff Badan Urusan Rumah Tangga dan Aspirasi</h3>
+<p class="text-primary text-sm font-medium">HIMA TEKKOM | Mar 2024 - Jan 2025 </p>
+<p class="text-text-secondary mt-2 text-sm leading-relaxed">
+                                    Terlibat dalam pengelolaan Aspirasi dan Relasi eksternal pada kegiatan organisasi himpunan mahasiswa teknik komputer UPI. Pernah menjadi ketua pelaksana acara Studi Komparatif Teknik Komputer x Teknik Energi POLBAN 2024.
+                                </p>
+</div>
+</div>
+<!-- Experience Item 2 -->
+<div class="relative">
+<div class="absolute -left-[37px] top-1 h-4 w-4 rounded-full bg-card-border border-4 border-background-dark"></div>
+<div class="flex flex-col gap-1">
+<h3 class="text-lg font-bold text-white">Staff Komisi Kepengawasan</h3>
+<p class="text-primary text-sm font-medium">HIMA TEKKOM | Mar 2025 - Des 2025</p>
+<p class="text-text-secondary mt-2 text-sm leading-relaxed">
+                                    Bertanggung jawab dalam pengawasan jalannya kegiatan organisasi himpunan mahasiswa teknik komputer UPI. Aktif dalam melakukan audit internal serta memberikan rekomendasi perbaikan untuk efisiensi operasional organisasi serta bertanggung jawab mengawasi program kerja Departemen Media dan Informasi.
+                                </p>
+</div>
+</div>
+<!-- Experience Item 3 -->
+<div class="relative">
+<div class="absolute -left-[37px] top-1 h-4 w-4 rounded-full bg-card-border border-4 border-background-dark"></div>
+<div class="flex flex-col gap-1">
+<h3 class="text-lg font-bold text-white">Staff Badan Legislasi</h3>
+<p class="text-primary text-sm font-medium">DPM KEMA UPI CIBIRU | Mar 2025 - Feb 2026</p>
+<p class="text-text-secondary mt-2 text-sm leading-relaxed">
+                                    Bertanggung jawab atas pengelolaan undang undang dan peraturan daerah kampus UPI di Cibiru. Aktif dalam penyusunan regulasi baru untuk kegiatan kemahasiswaan dan menjadi ketua pelaksana pada acara Pemilihan Raya DPM KEMA UPI CIBIRU 2025.
+                                </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Interests -->
+<section>
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary text-3xl">favorite</span>
+<h2 class="text-[28px] font-bold leading-tight">Minat</h2>
+</div>
+<div class="flex flex-wrap gap-4">
+<div class="flex items-center gap-3 p-4 rounded-lg bg-card-dark border border-card-border w-full sm:w-auto flex-1 min-w-[140px]">
+<span class="material-symbols-outlined text-purple-400">psychology</span>
+<span class="font-medium">Artificial Intelligence</span>
+</div>
+<div class="flex items-center gap-3 p-4 rounded-lg bg-card-dark border border-card-border w-full sm:w-auto flex-1 min-w-[140px]">
+<span class="material-symbols-outlined text-green-400">code</span>
+<span class="font-medium">Web Development</span>
+</div>
+<div class="flex items-center gap-3 p-4 rounded-lg bg-card-dark border border-card-border w-full sm:w-auto flex-1 min-w-[140px]">
+<span class="material-symbols-outlined text-pink-400">palette</span>
+<span class="font-medium">Graphic Design & UI/UX </span>
+</div>
+<div class="flex items-center gap-3 p-4 rounded-lg bg-card-dark border border-card-border w-full sm:w-auto flex-1 min-w-[140px]">
+<span class="material-symbols-outlined text-blue-400">memory</span>
+<span class="font-medium">Embedded Systems</span>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="mt-8 mb-12">
+<div class="rounded-xl bg-gradient-to-r from-card-dark to-[#111318] border border-card-border p-8 md:p-12 text-center relative overflow-hidden">
+<!-- Decorative glow -->
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-2/3 h-1/2 bg-primary/20 blur-[100px] rounded-full pointer-events-none"></div>
+<div class="relative z-10 flex flex-col items-center gap-6">
+<h2 class="text-3xl md:text-4xl font-black tracking-tight text-white max-w-2xl">
+                                Tertarik untuk berkolaborasi?
+                            </h2>
+<p class="text-text-secondary max-w-lg text-lg">
+                                Saya selalu terbuka untuk diskusi proyek baru, peluang magang, atau sekadar bertukar pikiran tentang teknologi.
+                            </p>
+<div class="flex flex-wrap gap-4 justify-center mt-2">
+<a href="contact.html" class="flex min-w-[140px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-primary hover:bg-primary/90 transition-colors text-white text-base font-bold shadow-lg shadow-primary/25">
+                                    Hubungi Saya
+                                </a>
+<a href="project.html" class="flex min-w-[140px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-card-border hover:bg-[#323946] transition-colors text-white text-base font-bold">
+                                    Lihat Proyek
+                                </a>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<!-- Footer -->
+<footer class="border-t border-card-border bg-[#111318] py-8 px-4 md:px-20 text-center">
+<div class="flex justify-center gap-6 mb-4 text-text-secondary">
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">code</span></a>
+<a class="hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined">link</span></a>
+</div>
+<p class="text-sm text-text-secondary">© 2023 Portofolio Mahasiswi Teknik Komputer UPI. Dibuat dengan Tailwind CSS.</p>
+</footer>
+</main>
+</body></html>

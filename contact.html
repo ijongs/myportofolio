@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Halaman Kontak - Mahasiswi TekKom</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display min-h-screen flex flex-col overflow-x-hidden transition-colors duration-300">
+<!-- Top Navigation -->
+<header class="sticky top-0 z-50 w-full border-b border-gray-200 dark:border-[#282e39] bg-white/80 dark:bg-[#101622]/80 backdrop-blur-md">
+<div class="max-w-[1280px] mx-auto px-4 sm:px-10 h-16 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="size-8 rounded-lg bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">terminal</span>
+</div>
+<h2 class="text-lg font-bold tracking-tight text-slate-900 dark:text-white">Putri Varizza Aulia</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors" href="project.html">Project</a>
+<a class="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary transition-colors" href="aboutme.html">About Me</a>
+<a class="text-sm font-medium text-primary" href="contact.html">Contact</a>
+</nav>
+<button class="md:hidden p-2 text-slate-600 dark:text-slate-300">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-grow flex flex-col items-center justify-start py-10 px-4 md:px-10 lg:px-40">
+<div class="w-full max-w-[1080px] flex flex-col gap-10">
+<!-- Page Header -->
+<div class="flex flex-col gap-4 animate-fade-in-up">
+<h1 class="text-4xl md:text-5xl font-black tracking-[-0.033em] text-slate-900 dark:text-white">
+                    Hubungi Saya
+                </h1>
+<p class="text-lg text-slate-600 dark:text-[#9da6b9] max-w-2xl leading-relaxed">
+                    Terbuka untuk kolaborasi, diskusi teknis, dan peluang karier di bidang Teknik Komputer. Mari terhubung dan membangun sesuatu yang luar biasa.
+                </p>
+</div>
+<!-- Content Grid: Info & Form -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 mt-4">
+<!-- Left Column: Contact Details & Social -->
+<div class="lg:col-span-5 flex flex-col gap-8">
+<!-- Contact Cards -->
+<div class="flex flex-col gap-4">
+<!-- Email Item -->
+<div class="group flex items-center gap-4 p-4 rounded-xl bg-white dark:bg-[#1e232e] border border-gray-200 dark:border-[#282e39] transition-all hover:border-primary/50 hover:shadow-lg dark:hover:shadow-primary/5">
+<div class="flex items-center justify-center rounded-lg bg-primary/10 text-primary shrink-0 size-12 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">Email</span>
+<p class="text-base font-medium text-slate-900 dark:text-white truncate">varizzaputri@upi.edu</p>
+</div>
+</div>
+<!-- Location Item -->
+<div class="group flex items-center gap-4 p-4 rounded-xl bg-white dark:bg-[#1e232e] border border-gray-200 dark:border-[#282e39] transition-all hover:border-primary/50 hover:shadow-lg dark:hover:shadow-primary/5">
+<div class="flex items-center justify-center rounded-lg bg-primary/10 text-primary shrink-0 size-12 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">Lokasi</span>
+<p class="text-base font-medium text-slate-900 dark:text-white">Bandung, Indonesia</p>
+</div>
+</div>
+</div>
+<!-- Social Actions -->
+<div>
+<h3 class="text-sm font-semibold text-slate-900 dark:text-white mb-4">Temukan saya di</h3>
+<div class="flex flex-wrap gap-4">
+<!-- LinkedIn -->
+<a class="flex items-center gap-3 px-5 py-3 rounded-lg bg-white dark:bg-[#1e232e] border border-gray-200 dark:border-[#282e39] hover:bg-gray-50 dark:hover:bg-[#252b36] transition-colors group" href="https://www.linkedin.com/in/putri-varizza-13904928a">
+<div class="text-slate-700 dark:text-slate-300 group-hover:text-[#0077b5] transition-colors">
+<span class="material-symbols-outlined">work</span>
+<!-- Note: Using generic 'work' icon as Material Symbols doesn't strictly support brand icons like LinkedIn -->
+</div>
+<span class="text-sm font-medium text-slate-700 dark:text-slate-200" >LinkedIn</span>
+</a>
+<!-- GitHub -->
+<a class="flex items-center gap-3 px-5 py-3 rounded-lg bg-white dark:bg-[#1e232e] border border-gray-200 dark:border-[#282e39] hover:bg-gray-50 dark:hover:bg-[#252b36] transition-colors group" href="http://github.com/ijongs">
+<div class="text-slate-700 dark:text-slate-300 group-hover:text-white group-hover:bg-black/80 rounded-full transition-colors">
+<span class="material-symbols-outlined">code</span>
+</div>
+<span class="text-sm font-medium text-slate-700 dark:text-slate-200">GitHub</span>
+</a>
+</div>
+</div>
+<!-- Map Decoration (Optional Visual) -->
+<div class="mt-4 rounded-xl overflow-hidden h-48 w-full relative border border-gray-200 dark:border-[#282e39]">
+<div class="absolute inset-0 bg-slate-200 dark:bg-[#1e232e] flex items-center justify-center">
+<!-- Using a gradient to represent a map abstractly -->
+<div class="w-full h-full bg-gradient-to-tr from-slate-200 to-slate-300 dark:from-[#1e232e] dark:to-[#282e39] opacity-50"></div>
+<div class="absolute flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-primary text-4xl drop-shadow-lg">location_on</span>
+<span class="text-xs font-semibold text-slate-500 dark:text-slate-400">Universitas Pendidikan Indonesia</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Contact Form -->
+<div class="lg:col-span-7">
+<div class="bg-white dark:bg-[#111318] rounded-2xl p-6 md:p-8 border border-gray-200 dark:border-[#282e39] shadow-sm">
+<h3 class="text-xl font-bold text-slate-900 dark:text-white mb-6">Kirim Pesan</h3>
+<form class="flex flex-col gap-5">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+<div class="flex flex-col gap-2">
+<label class="text-sm font-medium text-slate-700 dark:text-slate-300" for="name">Nama Lengkap</label>
+<input class="w-full rounded-lg bg-gray-50 dark:bg-[#1e232e] border border-gray-200 dark:border-[#282e39] px-4 py-3 text-sm text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all" id="name" placeholder="Masukkan nama anda" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-medium text-slate-700 dark:text-slate-300" for="email">Alamat Email</label>
+<input class="w-full rounded-lg bg-gray-50 dark:bg-[#1e232e] border border-gray-200 dark:border-[#282e39] px-4 py-3 text-sm text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all" id="email" placeholder="nama@contoh.com" type="email"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-medium text-slate-700 dark:text-slate-300" for="subject">Subjek</label>
+<div class="relative">
+<select class="w-full appearance-none rounded-lg bg-gray-50 dark:bg-[#1e232e] border border-gray-200 dark:border-[#282e39] px-4 py-3 text-sm text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all" id="subject">
+<option>Pilih topik diskusi</option>
+<option>Kolaborasi Proyek</option>
+<option>Peluang Magang/Kerja</option>
+<option>Pertanyaan Umum</option>
+</select>
+<div class="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-slate-500">
+<span class="material-symbols-outlined text-sm">expand_more</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="text-sm font-medium text-slate-700 dark:text-slate-300" for="message">Pesan Anda</label>
+<textarea class="w-full rounded-lg bg-gray-50 dark:bg-[#1e232e] border border-gray-200 dark:border-[#282e39] px-4 py-3 text-sm text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all resize-none" id="message" placeholder="Tuliskan pesan anda di sini..." rows="5"></textarea>
+</div>
+<div class="mt-2">
+<button class="w-full md:w-auto inline-flex items-center justify-center gap-2 rounded-lg bg-primary px-8 py-3 text-sm font-bold text-white shadow-lg shadow-primary/20 hover:bg-primary/90 hover:shadow-primary/40 focus:outline-none focus:ring-4 focus:ring-primary/30 active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-lg">send</span>
+                                    Kirim Pesan
+                                </button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="mt-auto border-t border-gray-200 dark:border-[#282e39] bg-white dark:bg-[#101622] py-8">
+<div class="max-w-[1280px] mx-auto px-10 flex flex-col md:flex-row items-center justify-between gap-4">
+<p class="text-sm text-slate-500 dark:text-[#9da6b9]">© 2025 varizzaputri.</p>
+<div class="flex items-center gap-6">
+<a class="text-slate-400 hover:text-primary transition-colors" href="https://www.linkedin.com/in/putri-varizza-13904928a">
+<span class="material-symbols-outlined">work</span>
+</a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="http://github.com/ijongs">
+<span class="material-symbols-outlined">code</span>
+</a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="mailto:varizzaputri@upi.edu">
+<span class="material-symbols-outlined">mail</span>
+</a>
+</div>
+</div>
+</footer>
+</body></html>

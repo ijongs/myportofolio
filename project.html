@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html class="dark" lang="id">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Halaman Project | Portofolio Mahasiswi Teknik Komputer UPI</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                        "surface-dark": "#1e293b",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        /* Animasi halus saat ganti page */
+        .fade-in { animation: fadeIn 0.5s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white transition-colors duration-300">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden font-display">
+
+<header class="sticky top-0 z-50 flex items-center justify-between border-b border-solid border-slate-200 dark:border-[#282e39] bg-white/90 dark:bg-[#111318]/90 backdrop-blur-md px-6 py-4 lg:px-10">
+    <div class="flex items-center gap-4">
+        <div class="size-8 text-primary">
+            <svg fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L2 7l10 5 10-5-10-5zm0 9l2.5-1.25L12 8.5l-2.5 1.25L12 11zm0 2.5l-5-2.5-5 2.5L12 22l10-8.5-5-2.5-5 2.5z"></path>
+            </svg>
+        </div>
+        <h2 class="text-lg font-bold leading-tight tracking-[-0.015em] hidden sm:block">Portofolio | Teknik Komputer UPI</h2>
+        <h2 class="text-lg font-bold leading-tight tracking-[-0.015em] sm:hidden">Portofolio</h2>
+    </div>
+    <div class="hidden md:flex items-center gap-8">
+        <nav class="flex items-center gap-6">
+            <a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="index.html">Beranda</a>
+            <a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="aboutme.html">About Me</a>
+            <a class="text-primary text-sm font-bold border-b-2 border-primary pb-0.5" href="project.html">Project</a>
+            <a class="text-slate-600 dark:text-slate-300 text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="contact.html">Contact</a>
+        </nav>
+    </div>
+    <div class="flex items-center gap-4">
+        <button class="flex h-10 cursor-pointer items-center justify-center overflow-hidden rounded-lg bg-primary px-4 text-white text-sm font-bold hover:bg-blue-600 transition-colors shadow-lg shadow-blue-900/20">
+            <span class="mr-2 material-symbols-outlined text-[18px]">download</span>
+            <span class="truncate">Unduh CV</span>
+        </button>
+        <button class="md:hidden text-slate-500 dark:text-slate-300">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+    </div>
+</header>
+
+<main class="flex-1 flex flex-col items-center py-8 sm:py-12">
+<div class="w-full max-w-[1200px] px-4 sm:px-6 lg:px-8 flex flex-col gap-8">
+    
+    <div class="flex flex-col gap-4 max-w-3xl">
+        <h1 class="text-4xl sm:text-5xl font-black leading-tight tracking-tight text-slate-900 dark:text-white">Project &amp; Tugas Besar</h1>
+        <p class="text-slate-500 dark:text-[#9da6b9] text-lg leading-relaxed">
+            Kumpulan tugas akhir, riset, dan pengembangan perangkat lunak serta IoT selama studi saya di Universitas Pendidikan Indonesia. Fokus pada solusi teknis yang efisien dan inovatif.
+        </p>
+    </div>
+
+    <div class="w-full overflow-x-auto no-scrollbar pb-2">
+        <div class="flex gap-3 min-w-max">
+            <button class="group flex h-9 items-center justify-center rounded-full bg-primary px-5 transition-colors">
+                <p class="text-white text-sm font-medium">Semua</p>
+            </button>
+            <button class="group flex h-9 items-center justify-center rounded-full bg-slate-200 dark:bg-[#282e39] px-5 hover:bg-slate-300 dark:hover:bg-[#363d4a] transition-colors">
+                <p class="text-slate-700 dark:text-slate-300 text-sm font-medium">Embedded Systems</p>
+            </button>
+            <button class="group flex h-9 items-center justify-center rounded-full bg-slate-200 dark:bg-[#282e39] px-5 hover:bg-slate-300 dark:hover:bg-[#363d4a] transition-colors">
+                <p class="text-slate-700 dark:text-slate-300 text-sm font-medium">Web App</p>
+            </button>
+        </div>
+    </div>
+
+    <div id="project-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-4">
+        
+        <div class="project-card group flex flex-col overflow-hidden rounded-xl bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-1">
+            <div class="relative w-full aspect-video overflow-hidden bg-slate-800">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105">
+                    <img src="assets/RAIN ALARM.png" alt="" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm px-2 py-1 rounded text-xs font-bold text-white border border-white/10">IoT</div>
+            </div>
+            <div class="flex flex-col flex-1 p-5 gap-4">
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Rain Alarm Detector</h3>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed line-clamp-2">
+                        Implementasi sistem deteksi curah hujan sederhana dengan menggunakan breadboard, sensor air dan buzzer.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 mt-auto">
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">Buzzer</span>
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">Sensor</span>
+                </div>
+                <div class="flex items-center gap-3 pt-2 border-t border-slate-100 dark:border-slate-700/50">
+                    <a class="flex-1 flex items-center justify-center gap-2 h-9 rounded bg-primary text-white text-sm font-semibold hover:bg-blue-600 transition-colors" href="#">Detail <span class="material-symbols-outlined text-[16px]">arrow_outward</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card group flex flex-col overflow-hidden rounded-xl bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-1">
+            <div class="relative w-full aspect-video overflow-hidden bg-slate-800">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105">
+                    <img src="assets/TETOME.png" alt="" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm px-2 py-1 rounded text-xs font-bold text-white border border-white/10">Web App</div>
+            </div>
+            <div class="flex flex-col flex-1 p-5 gap-4">
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Trash to Money</h3>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed line-clamp-2">
+                        Website pengelolaan sampah yang dibuat dengan menggunakan React dan Tailwind CSS.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 mt-auto">
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">React</span>
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">Tailwind</span>
+                </div>
+                <div class="flex items-center gap-3 pt-2 border-t border-slate-100 dark:border-slate-700/50">
+                    <a class="flex-1 flex items-center justify-center gap-2 h-9 rounded bg-primary text-white text-sm font-semibold hover:bg-blue-600 transition-colors" href="#">Detail <span class="material-symbols-outlined text-[16px]">arrow_outward</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card group flex flex-col overflow-hidden rounded-xl bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-1">
+            <div class="relative w-full aspect-video overflow-hidden bg-slate-800">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105">
+                    <img src="assets/WhatsApp Image 2024-12-23 at 09.22.43_d9897554.jpg" alt="" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm px-2 py-1 rounded text-xs font-bold text-white border border-white/10">IoT</div>
+            </div>
+            <div class="flex flex-col flex-1 p-5 gap-4">
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Sound Level Meter</h3>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed line-clamp-2">
+                        Proyek ini memanfaatkan mikrofon untuk mendeteksi suara dan mengontrol LED.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 mt-auto">
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">Arduino</span>
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">MAX9814</span>
+                </div>
+                <div class="flex items-center gap-3 pt-2 border-t border-slate-100 dark:border-slate-700/50">
+                    <a class="flex-1 flex items-center justify-center gap-2 h-9 rounded bg-primary text-white text-sm font-semibold hover:bg-blue-600 transition-colors" href="#">Detail <span class="material-symbols-outlined text-[16px]">arrow_outward</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card group flex flex-col overflow-hidden rounded-xl bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-1">
+            <div class="relative w-full aspect-video overflow-hidden bg-slate-800">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105">
+                    <img src="assets/LEARNATOMY.png" alt="" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm px-2 py-1 rounded text-xs font-bold text-white border border-white/10">Mobile</div>
+            </div>
+            <div class="flex flex-col flex-1 p-5 gap-4">
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Learnatomy</h3>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed line-clamp-2">
+                        Aplikasi Augmented Reality (AR) interaktif yang dikembangkan menggunakan Unity 3D.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 mt-auto">
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">Unity 3D</span>
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">AR</span>
+                </div>
+                <div class="flex items-center gap-3 pt-2 border-t border-slate-100 dark:border-slate-700/50">
+                    <a class="flex-1 flex items-center justify-center gap-2 h-9 rounded bg-primary text-white text-sm font-semibold hover:bg-blue-600 transition-colors" href="#">Detail <span class="material-symbols-outlined text-[16px]">arrow_outward</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card group flex flex-col overflow-hidden rounded-xl bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-1">
+            <div class="relative w-full aspect-video overflow-hidden bg-slate-800">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105">
+                    <img src="assets/Screenshot 2025-03-22 135814.png" alt="" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm px-2 py-1 rounded text-xs font-bold text-white border border-white/10">Code</div>
+            </div>
+            <div class="flex flex-col flex-1 p-5 gap-4">
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Game Ular Tangga</h3>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed line-clamp-2">
+                        Pengembangan game edukasi ular tangga berbasis C++ dengan antarmuka grafis Adobe Flash. 
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 mt-auto">
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">C++</span>
+                </div>
+                <div class="flex items-center gap-3 pt-2 border-t border-slate-100 dark:border-slate-700/50">
+                    <a class="flex-1 flex items-center justify-center gap-2 h-9 rounded bg-primary text-white text-sm font-semibold hover:bg-blue-600 transition-colors" href="#">Detail <span class="material-symbols-outlined text-[16px]">arrow_outward</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card group flex flex-col overflow-hidden rounded-xl bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-1">
+            <div class="relative w-full aspect-video overflow-hidden bg-slate-800">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105">
+                    <img src="assets/WhatsApp Image 2026-01-03 at 3.14.26 PM.jpeg" alt="" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm px-2 py-1 rounded text-xs font-bold text-white border border-white/10">IoT</div>
+            </div>
+            <div class="flex flex-col flex-1 p-5 gap-4">
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Trainer DC Motor</h3>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed line-clamp-2">
+                        Proyek pembuatan trainer DC motor yang menggunakan mikrokontroler Arduino.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 mt-auto">
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">IoT</span>
+                </div>
+                <div class="flex items-center gap-3 pt-2 border-t border-slate-100 dark:border-slate-700/50">
+                    <a class="flex-1 flex items-center justify-center gap-2 h-9 rounded bg-primary text-white text-sm font-semibold hover:bg-blue-600 transition-colors" href="#">Detail <span class="material-symbols-outlined text-[16px]">arrow_outward</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card group flex flex-col overflow-hidden rounded-xl bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-1">
+            <div class="relative w-full aspect-video overflow-hidden bg-slate-800">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105">
+                    <img src="assets/WhatsApp Image 2026-01-03 at 10.34.28 PM.jpeg" alt="New Project" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm px-2 py-1 rounded text-xs font-bold text-white border border-white/10">IoT</div>
+            </div>
+            <div class="flex flex-col flex-1 p-5 gap-4">
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Sistem Tracking Hewan Ternak</h3>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed line-clamp-2">
+                        Sistem pelacakan hewan ternak menggunakan GPS dan sensor detak jantung yang terintegrasi dengan Firebase. Pengembangan proyek ini bertujuan untuk memantau lokasi dan kondisi kesehatan hewan ternak secara real-time. project ini dibuat untuk memenuhi tugas akhir pada mata kuliah Sistem Tertanam (Embedded Systems).
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 mt-auto">
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">GPS</span>
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">Pulse sensor</span>
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">Firebase</span>
+                </div>
+                <div class="flex items-center gap-3 pt-2 border-t border-slate-100 dark:border-slate-700/50">
+                    <a class="flex-1 flex items-center justify-center gap-2 h-9 rounded bg-primary text-white text-sm font-semibold hover:bg-blue-600 transition-colors" href="#">Detail <span class="material-symbols-outlined text-[16px]">arrow_outward</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card group flex flex-col overflow-hidden rounded-xl bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-1">
+            <div class="relative w-full aspect-video overflow-hidden bg-slate-800">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105">
+                     <img src="https://via.placeholder.com/400x300" alt="New Project" class="w-full h-full object-cover opacity-50">
+                </div>
+                <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm px-2 py-1 rounded text-xs font-bold text-white border border-white/10">AI</div>
+            </div>
+            <div class="flex flex-col flex-1 p-5 gap-4">
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Astrobot</h3>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed line-clamp-2">
+                        Pengembangan chatbot berbasis Large Language Model (LLM) untuk membantu pengguna memahami konsep astronomi dengan lebih baik. Project ini dibuat untuk memenuhi tugas akhir pada Course Data Science yang diadakan oleh Hacktiv8.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 mt-auto">
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">Chatbot</span>
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">LLM</span>
+                </div>
+                <div class="flex items-center gap-3 pt-2 border-t border-slate-100 dark:border-slate-700/50">
+                    <a class="flex-1 flex items-center justify-center gap-2 h-9 rounded bg-primary text-white text-sm font-semibold hover:bg-blue-600 transition-colors" href="#">Detail <span class="material-symbols-outlined text-[16px]">arrow_outward</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card group flex flex-col overflow-hidden rounded-xl bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-1">
+            <div class="relative w-full aspect-video overflow-hidden bg-slate-800">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105">
+                     <img src="https://via.placeholder.com/400x300" alt="New Project" class="w-full h-full object-cover opacity-50">
+                </div>
+                <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm px-2 py-1 rounded text-xs font-bold text-white border border-white/10">AI</div>
+            </div>
+            <div class="flex flex-col flex-1 p-5 gap-4">
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Chatbot pada Cat Shop</h3>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed line-clamp-2">
+                        Pengembangan chatbot berbasis Large Language Model (LLM) yang di-finetune menggunakan QLora untuk membantu pelanggan dalam memilih produk di toko kucing online.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 mt-auto">
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">LLM</span>
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">QLora</span>
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">Website</span>
+                </div>
+                <div class="flex items-center gap-3 pt-2 border-t border-slate-100 dark:border-slate-700/50">
+                    <a class="flex-1 flex items-center justify-center gap-2 h-9 rounded bg-primary text-white text-sm font-semibold hover:bg-blue-600 transition-colors" href="#">Detail <span class="material-symbols-outlined text-[16px]">arrow_outward</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="project-card group flex flex-col overflow-hidden rounded-xl bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-1">
+            <div class="relative w-full aspect-video overflow-hidden bg-slate-800">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105">
+                     <img src="https://via.placeholder.com/400x300" alt="New Project" class="w-full h-full object-cover opacity-50">
+                </div>
+                <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm px-2 py-1 rounded text-xs font-bold text-white border border-white/10">PAB</div>
+            </div>
+            <div class="flex flex-col flex-1 p-5 gap-4">
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">SENTARA- Sentra Aman dan Rahasia (Kesetaraan Gender)</h3>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed line-clamp-2">
+                        Aplikasi mobile untuk mendukung kesetaraan gender dengan fitur pelaporan dan edukasi, dikembangkan menggunakan Dart dan Flutter. project ini dibuat untuk memenuhi tugas besar pada mata kuliah Pemrograman Aplikasi Bergerak.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 mt-auto">
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">Dart</span>
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">Flutter</span>
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">PAB</span>
+                </div>
+                <div class="flex items-center gap-3 pt-2 border-t border-slate-100 dark:border-slate-700/50">
+                    <a class="flex-1 flex items-center justify-center gap-2 h-9 rounded bg-primary text-white text-sm font-semibold hover:bg-blue-600 transition-colors" href="#">Detail <span class="material-symbols-outlined text-[16px]">arrow_outward</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card group flex flex-col overflow-hidden rounded-xl bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-1">
+            <div class="relative w-full aspect-video overflow-hidden bg-slate-800">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105">
+                     <img src="https://via.placeholder.com/400x300" alt="New Project" class="w-full h-full object-cover opacity-50">
+                </div>
+                <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm px-2 py-1 rounded text-xs font-bold text-white border border-white/10">AI</div>
+            </div>
+            <div class="flex flex-col flex-1 p-5 gap-4">
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Chatbot pada Cat Shop</h3>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed line-clamp-2">
+                        Pengembangan chatbot berbasis Large Language Model (LLM) yang di-finetune menggunakan QLora untuk membantu pelanggan dalam memilih produk di toko kucing online.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 mt-auto">
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">LLM</span>
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">QLora</span>
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">Website</span>
+                </div>
+                <div class="flex items-center gap-3 pt-2 border-t border-slate-100 dark:border-slate-700/50">
+                    <a class="flex-1 flex items-center justify-center gap-2 h-9 rounded bg-primary text-white text-sm font-semibold hover:bg-blue-600 transition-colors" href="#">Detail <span class="material-symbols-outlined text-[16px]">arrow_outward</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="project-card group flex flex-col overflow-hidden rounded-xl bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-1">
+            <div class="relative w-full aspect-video overflow-hidden bg-slate-800">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105">
+                     <img src="https://via.placeholder.com/400x300" alt="New Project" class="w-full h-full object-cover opacity-50">
+                </div>
+                <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm px-2 py-1 rounded text-xs font-bold text-white border border-white/10">PAB</div>
+            </div>
+            <div class="flex flex-col flex-1 p-5 gap-4">
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">SENTARA- Sentra Aman dan Rahasia (Kesetaraan Gender)</h3>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed line-clamp-2">
+                        Aplikasi mobile untuk mendukung kesetaraan gender dengan fitur pelaporan dan edukasi, dikembangkan menggunakan Dart dan Flutter. project ini dibuat untuk memenuhi tugas besar pada mata kuliah Pemrograman Aplikasi Bergerak.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 mt-auto">
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">Dart</span>
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">Flutter</span>
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">PAB</span>
+                </div>
+                <div class="flex items-center gap-3 pt-2 border-t border-slate-100 dark:border-slate-700/50">
+                    <a class="flex-1 flex items-center justify-center gap-2 h-9 rounded bg-primary text-white text-sm font-semibold hover:bg-blue-600 transition-colors" href="#">Detail <span class="material-symbols-outlined text-[16px]">arrow_outward</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card group flex flex-col overflow-hidden rounded-xl bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-1">
+            <div class="relative w-full aspect-video overflow-hidden bg-slate-800">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105">
+                    <img src="assets/WhatsApp Image 2025-12-30 at 14.13.02_f208f228.jpg" alt="New Project" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm px-2 py-1 rounded text-xs font-bold text-white border border-white/10">IoT</div>
+            </div>
+            <div class="flex flex-col flex-1 p-5 gap-4">
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Smart Lighting based IoT</h3>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed line-clamp-2">
+                        Proyek sistem pencahayaan pintar berbasis IoT yang menggunakan sensor PIR, sensor sentuh, dan modul relay untuk mengontrol lampu otomatis. Sistem ini juga dilengkapi dengan pemantauan konsumsi daya menggunakan modul PZEM-004T. project ini dibuat untuk memenuhi tugas akhir pada mata kuliah Proyek Konsultasi dan bekerja sama dengan Mitra.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 mt-auto">
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">PIR</span>
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">Relay</span>
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">Touch Sensor</span>
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">ESP32</span>
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">PZEM</span>
+                </div>
+                <div class="flex items-center gap-3 pt-2 border-t border-slate-100 dark:border-slate-700/50">
+                    <a class="flex-1 flex items-center justify-center gap-2 h-9 rounded bg-primary text-white text-sm font-semibold hover:bg-blue-600 transition-colors" href="#">Detail <span class="material-symbols-outlined text-[16px]">arrow_outward</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card group flex flex-col overflow-hidden rounded-xl bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-1">
+            <div class="relative w-full aspect-video overflow-hidden bg-slate-800">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105">
+                     <img src="https://via.placeholder.com/400x300" alt="New Project" class="w-full h-full object-cover opacity-50">
+                </div>
+                <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm px-2 py-1 rounded text-xs font-bold text-white border border-white/10">AI</div>
+            </div>
+            <div class="flex flex-col flex-1 p-5 gap-4">
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Astrobot</h3>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed line-clamp-2">
+                        Pengembangan chatbot berbasis Large Language Model (LLM) untuk membantu pengguna memahami konsep astronomi dengan lebih baik. Project ini dibuat untuk memenuhi tugas akhir pada Course Data Science yang diadakan oleh Hacktiv8.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 mt-auto">
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">Chatbot</span>
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">LLM</span>
+                </div>
+                <div class="flex items-center gap-3 pt-2 border-t border-slate-100 dark:border-slate-700/50">
+                    <a class="flex-1 flex items-center justify-center gap-2 h-9 rounded bg-primary text-white text-sm font-semibold hover:bg-blue-600 transition-colors" href="#">Detail <span class="material-symbols-outlined text-[16px]">arrow_outward</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card group flex flex-col overflow-hidden rounded-xl bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-1">
+            <div class="relative w-full aspect-video overflow-hidden bg-slate-800">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105">
+                     <img src="https://via.placeholder.com/400x300" alt="New Project" class="w-full h-full object-cover opacity-50">
+                </div>
+                <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm px-2 py-1 rounded text-xs font-bold text-white border border-white/10">AI</div>
+            </div>
+            <div class="flex flex-col flex-1 p-5 gap-4">
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Chatbot pada Cat Shop</h3>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed line-clamp-2">
+                        Pengembangan chatbot berbasis Large Language Model (LLM) yang di-finetune menggunakan QLora untuk membantu pelanggan dalam memilih produk di toko kucing online.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 mt-auto">
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">LLM</span>
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">QLora</span>
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">Website</span>
+                </div>
+                <div class="flex items-center gap-3 pt-2 border-t border-slate-100 dark:border-slate-700/50">
+                    <a class="flex-1 flex items-center justify-center gap-2 h-9 rounded bg-primary text-white text-sm font-semibold hover:bg-blue-600 transition-colors" href="#">Detail <span class="material-symbols-outlined text-[16px]">arrow_outward</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="project-card group flex flex-col overflow-hidden rounded-xl bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-1">
+            <div class="relative w-full aspect-video overflow-hidden bg-slate-800">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105">
+                     <img src="https://via.placeholder.com/400x300" alt="New Project" class="w-full h-full object-cover opacity-50">
+                </div>
+                <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm px-2 py-1 rounded text-xs font-bold text-white border border-white/10">PAB</div>
+            </div>
+            <div class="flex flex-col flex-1 p-5 gap-4">
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">SENTARA- Sentra Aman dan Rahasia (Kesetaraan Gender)</h3>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed line-clamp-2">
+                        Aplikasi mobile untuk mendukung kesetaraan gender dengan fitur pelaporan dan edukasi, dikembangkan menggunakan Dart dan Flutter. project ini dibuat untuk memenuhi tugas besar pada mata kuliah Pemrograman Aplikasi Bergerak.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 mt-auto">
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">Dart</span>
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">Flutter</span>
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">PAB</span>
+                </div>
+                <div class="flex items-center gap-3 pt-2 border-t border-slate-100 dark:border-slate-700/50">
+                    <a class="flex-1 flex items-center justify-center gap-2 h-9 rounded bg-primary text-white text-sm font-semibold hover:bg-blue-600 transition-colors" href="#">Detail <span class="material-symbols-outlined text-[16px]">arrow_outward</span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card group flex flex-col overflow-hidden rounded-xl bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-1">
+            <div class="relative w-full aspect-video overflow-hidden bg-slate-800">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105">
+                     <img src="https://via.placeholder.com/400x300" alt="New Project" class="w-full h-full object-cover opacity-50">
+                </div>
+                <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm px-2 py-1 rounded text-xs font-bold text-white border border-white/10">AI</div>
+            </div>
+            <div class="flex flex-col flex-1 p-5 gap-4">
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">Chatbot pada Cat Shop</h3>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed line-clamp-2">
+                        Pengembangan chatbot berbasis Large Language Model (LLM) yang di-finetune menggunakan QLora untuk membantu pelanggan dalam memilih produk di toko kucing online.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 mt-auto">
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">LLM</span>
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">QLora</span>
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">Website</span>
+                </div>
+                <div class="flex items-center gap-3 pt-2 border-t border-slate-100 dark:border-slate-700/50">
+                    <a class="flex-1 flex items-center justify-center gap-2 h-9 rounded bg-primary text-white text-sm font-semibold hover:bg-blue-600 transition-colors" href="#">Detail <span class="material-symbols-outlined text-[16px]">arrow_outward</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="project-card group flex flex-col overflow-hidden rounded-xl bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 hover:-translate-y-1">
+            <div class="relative w-full aspect-video overflow-hidden bg-slate-800">
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105">
+                     <img src="https://via.placeholder.com/400x300" alt="New Project" class="w-full h-full object-cover opacity-50">
+                </div>
+                <div class="absolute top-3 right-3 bg-black/60 backdrop-blur-sm px-2 py-1 rounded text-xs font-bold text-white border border-white/10">PAB</div>
+            </div>
+            <div class="flex flex-col flex-1 p-5 gap-4">
+                <div>
+                    <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">SENTARA- Sentra Aman dan Rahasia (Kesetaraan Gender)</h3>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed line-clamp-2">
+                        Aplikasi mobile untuk mendukung kesetaraan gender dengan fitur pelaporan dan edukasi, dikembangkan menggunakan Dart dan Flutter. project ini dibuat untuk memenuhi tugas besar pada mata kuliah Pemrograman Aplikasi Bergerak.
+                    </p>
+                </div>
+                <div class="flex flex-wrap gap-2 mt-auto">
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">Dart</span>
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">Flutter</span>
+                    <span class="px-2 py-1 rounded bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-300 text-xs font-semibold">PAB</span>
+                </div>
+                <div class="flex items-center gap-3 pt-2 border-t border-slate-100 dark:border-slate-700/50">
+                    <a class="flex-1 flex items-center justify-center gap-2 h-9 rounded bg-primary text-white text-sm font-semibold hover:bg-blue-600 transition-colors" href="#">Detail <span class="material-symbols-outlined text-[16px]">arrow_outward</span></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="flex items-center justify-center pt-8">
+        <div class="flex items-center gap-1">
+            <button onclick="changePage(currentPage - 1)" id="btn-prev" class="flex size-10 items-center justify-center rounded-lg text-slate-400 hover:bg-slate-100 dark:hover:bg-[#282e39] transition-colors" disabled="">
+                <span class="material-symbols-outlined">chevron_left</span>
+            </button>
+            
+            <button onclick="changePage(1)" id="btn-1" class="page-btn flex size-10 items-center justify-center rounded-lg bg-primary text-white text-sm font-bold shadow-lg shadow-primary/25">1</button>
+            
+            <button onclick="changePage(2)" id="btn-2" class="page-btn flex size-10 items-center justify-center rounded-lg text-slate-600 dark:text-slate-300 text-sm font-medium hover:bg-slate-100 dark:hover:bg-[#282e39] transition-colors">2</button>
+
+            <button onclick="changePage(3)" id="btn-3" class="page-btn flex size-10 items-center justify-center rounded-lg text-slate-600 dark:text-slate-300 text-sm font-medium hover:bg-slate-100 dark:hover:bg-[#282e39] transition-colors">3</button>  
+            
+            <button onclick="changePage(currentPage + 1)" id="btn-next" class="flex size-10 items-center justify-center rounded-lg text-slate-600 dark:text-slate-300 text-sm font-medium hover:bg-slate-100 dark:hover:bg-[#282e39] transition-colors">
+                <span class="material-symbols-outlined">chevron_right</span>
+            </button>
+        </div>
+    </div>
+</div>
+</main>
+
+<footer class="border-t border-slate-200 dark:border-[#282e39] bg-white dark:bg-[#111318] py-8">
+    <div class="mx-auto flex max-w-[1200px] flex-col items-center justify-between gap-6 px-6 md:flex-row">
+        <div class="flex flex-col gap-2">
+            <p class="text-slate-900 dark:text-white font-bold text-lg">Portofolio Putri Varizza Aulia</p>
+            <p class="text-slate-500 dark:text-[#9da6b9] text-sm">Teknik Komputer - Universitas Pendidikan Indonesia</p>
+        </div>
+        <div class="mt-8 text-center text-xs text-slate-400 dark:text-slate-600">
+             © 2025 varizzaputri.
+        </div>
+    </div>
+</footer>
+</div>
+
+<script>
+    let currentPage = 1;
+    const itemsPerPage = 6; // Menampilkan 6 project per halaman
+    const cards = document.querySelectorAll('.project-card'); // Mengambil semua elemen card
+    const totalPages = Math.ceil(cards.length / itemsPerPage);
+
+    function showPage(page) {
+        // Validasi halaman
+        if (page < 1) page = 1;
+        if (page > totalPages) page = totalPages;
+        currentPage = page;
+
+        // Loop semua card untuk show/hide
+        cards.forEach((card, index) => {
+            // Sembunyikan semua dulu
+            card.classList.add('hidden');
+            card.classList.remove('fade-in');
+
+            // Hitung range card yang harus muncul
+            const start = (page - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+
+            // Jika index card ada di range halaman ini, tampilkan
+            if (index >= start && index < end) {
+                card.classList.remove('hidden');
+                // Tambahkan sedikit delay animasi agar cantik
+                setTimeout(() => {
+                    card.classList.add('fade-in');
+                }, 50); 
+            }
+        });
+
+        updatePaginationButtons();
+        
+        // Scroll ke atas grid (opsional, biar enak navigasinya)
+        document.getElementById('project-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    function updatePaginationButtons() {
+        // Reset style tombol angka
+        document.querySelectorAll('.page-btn').forEach(btn => {
+            btn.className = "page-btn flex size-10 items-center justify-center rounded-lg text-slate-600 dark:text-slate-300 text-sm font-medium hover:bg-slate-100 dark:hover:bg-[#282e39] transition-colors";
+        });
+
+        // Set tombol angka aktif jadi Biru
+        const activeBtn = document.getElementById(`btn-${currentPage}`);
+        if(activeBtn) {
+            activeBtn.className = "page-btn flex size-10 items-center justify-center rounded-lg bg-primary text-white text-sm font-bold shadow-lg shadow-primary/25";
+        }
+
+        // Atur tombol Prev/Next disable/enable
+        const btnPrev = document.getElementById('btn-prev');
+        const btnNext = document.getElementById('btn-next');
+
+        btnPrev.disabled = currentPage === 1;
+        btnPrev.classList.toggle('text-slate-400', currentPage === 1);
+        
+        btnNext.disabled = currentPage === totalPages;
+        btnNext.classList.toggle('text-slate-400', currentPage === totalPages);
+    }
+
+    // Jalankan saat pertama kali load
+    document.addEventListener('DOMContentLoaded', () => {
+        showPage(1);
+    });
+
+    // Helper function agar bisa dipanggil di HTML onclick
+    window.changePage = showPage;
+</script>
+
+</body>
+</html>
